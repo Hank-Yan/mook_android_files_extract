@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 import sys, os, json, shutil
 if __name__ == "__main__":
-    # F:\playpython\cn.com.open.mooc\video
-    path = raw_input("please input the source path: ") + os.sep + "video"
+    # F:\cn.com.open.mooc
+    path = raw_input("please input the source path, " + "\n" + "you must find directory 'cn.com.open.mooc' and end with it" + "\n"+"(for example: 'F:\cn.com.open.mooc)': ")
     if path == "":
         print "the path can not be empty!^_^!"
         sys.exit(0)
-    # destPath = "C:\mook\videos"
+    path = path + os.sep + "video"
+    # destPath = "C:\videos"
     destPath = raw_input("please input the destination path: ")
     if destPath == "":
         print "the destPath can not be empty!^_^!"
